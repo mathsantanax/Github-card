@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@keyframes github-card-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes github-card-glow {
+  0%,
+  100% {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 20px 60px rgba(255, 255, 255, 0.12);
+  }
+}
+
+@keyframes github-card-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.82;
+  }
+}
+
+@keyframes github-card-shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.github-card-animation-float {
+  animation: github-card-float 4s ease-in-out infinite;
+}
+
+.github-card-animation-glow {
+  animation: github-card-glow 2.5s ease-in-out infinite;
+}
+
+.github-card-animation-pulse {
+  animation: github-card-pulse 2s ease-in-out infinite;
+}
+
+.github-card-animation-shimmer {
+  background-image:
+    linear-gradient(
+      110deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.08) 50%,
+      transparent 70%
+    );
+  background-size: 1000px 100%;
+  animation: github-card-shimmer 3s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .github-card-animation-float,
+  .github-card-animation-glow,
+  .github-card-animation-pulse,
+  .github-card-animation-shimmer {
+    animation: none;
+  }
+}

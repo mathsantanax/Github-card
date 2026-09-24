@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
-import type { ProfileConfig } from '../../types/profile'
+import type { ProfileConfig } from '../../types/profile.js'
 import type {
   GithubRepository,
   GithubUser,
-} from '../../services/github'
+} from '../../services/github.js'
 
 interface ProfilePreviewProps {
   profile: ProfileConfig

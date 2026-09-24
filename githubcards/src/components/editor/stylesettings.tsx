@@ -2,7 +2,7 @@ import type {
   AnimationType,
   GradientDirection,
   ProfileConfig,
-} from '../../types/profile'
+} from '../../types/profile.js'
 
 interface StyleSettingsProps {
   profile: ProfileConfig

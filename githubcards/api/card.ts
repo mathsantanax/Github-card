@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { escapeXml } from './card-utils'
-import { decodeProfileConfig } from './card-encoder'
-import type { ProfileConfig } from '../src/types/profile'
+import { escapeXml } from './card-utils.js'
+import { decodeProfileConfig } from './card-encoder.js'
+import type { ProfileConfig } from '../src/types/profile.js'
 
 interface GithubUser {
   login: string

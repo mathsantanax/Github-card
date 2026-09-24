@@ -1,7 +1,7 @@
 import type {
   ProfileConfig,
   SocialPlatform,
-} from '../../types/profile'
+} from '../../types/profile.js'
 
 interface SocialSettingsProps {
   profile: ProfileConfig

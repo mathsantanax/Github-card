@@ -5,11 +5,11 @@ import {
   type GithubRepository,
   type GithubUser,
 } from '../services/github'
-import { ProfilePreview } from '../components/preview/profilepreview'
-import type { ProfileConfig } from '../types/profile'
-import { SocialSettings } from '../components/editor/socialsettings'
-import { StyleSettings } from '../components/editor/stylesettings'
-import { encodeProfileConfig } from '../services/card-url'
+import { ProfilePreview } from '../components/preview/profilepreview.js'
+import type { ProfileConfig } from '../types/profile.js'
+import { SocialSettings } from '../components/editor/socialsettings.js'
+import { StyleSettings } from '../components/editor/stylesettings.js'
+import { encodeProfileConfig } from '../services/card-url.js'
 
 const initialProfile: ProfileConfig = {
   username: 'mathsantanax',

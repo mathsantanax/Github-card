@@ -1,4 +1,4 @@
-import type { ProfileConfig } from '../types/profile'
+import type { ProfileConfig } from '../types/profile.js'
 
 function encodeBase64Url(value: string) {
   const bytes = new TextEncoder().encode(value)

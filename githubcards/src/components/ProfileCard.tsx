@@ -1,4 +1,4 @@
-import type { GithubUser } from '../services/github'
+import type { GithubUser } from '../services/github.js'
 
 interface ProfileCardProps {
   user: GithubUser

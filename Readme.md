@@ -2,7 +2,7 @@
 
 <p align="center">
   <img
-    src="./public/github-cards-preview.png"
+    src="./githubcards/public/github-cards-preview.png"
     alt="GitHub Cards Preview"
     width="900"
   />
